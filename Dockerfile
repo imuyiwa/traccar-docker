@@ -14,6 +14,6 @@ RUN unzip traccar-linux-64-3.3.zip
 
 RUN ./traccar.run
 
-EXPOSE 8080
+EXPOSE 8082
 
 ENTRYPOINT /opt/traccar/bin/traccar start && tail -f /opt/traccar/logs/tracker-server.log
